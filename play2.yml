@@ -5,9 +5,9 @@
 
   tasks:
     - name: Welcome friends
-      firstmodule:
-        name: "Ansible"
-      register: result
+      set_fact:
+        result:
+          message: "Hello Ansible"
 
     - name: Show message
       debug:
